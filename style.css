@@ -1,3 +1,10 @@
+*{
+	box-sizing:border-box;
+}
+/*
+box sizing added to ensure padding and margin are included in total width and height
+*/
+
 #bod {
 	margin: 0px;
 	height: 2000px;
@@ -8,18 +15,29 @@
     position: absolute;
     right: 0;
     bottom: 0;
+<<<<<<< HEAD
     min-width: 100%;  
     z-index: -2;
     overflow: hidden;
+=======
+    min-width: 100%; 
+    
+    z-index: -1;
+>>>>>>> 5db5584b846a311ee0032d405e425194ae2f920e
 }
 
 .main {
 	position: absolute;
-  	width: 100%;
+  	width: 99%;
   	height: 100%;
+  	opacity: 1;
   	border:1px solid black;
+<<<<<<< HEAD
   	padding:10px 10px 10px 10px;
   	display: inline-flex;
+=======
+  	
+>>>>>>> 5db5584b846a311ee0032d405e425194ae2f920e
 
 }
 
@@ -31,20 +49,20 @@
 
 
 .container1 {
-	width: 200px;
+	width: 20%;
   	height:100%
 
   	
 }
 .container2 {
-	width:910px;
+	width:60%;
   	height: 100%;
   	text-align: center;
   	
   	
 }
 .container3 {
-	width: 235px;
+	width: 20%;
   	height: 100%;
   	text-align: center;
   	font-weight: bold;
@@ -73,8 +91,13 @@
 	padding-top: 300px;
 	padding-bottom: 100px;
 }
+<<<<<<< HEAD
 
 .logo1 {
 	padding-left: 100px;
 	padding-top: 200px;
+=======
+#pics{
+	width:50%;
+>>>>>>> 5db5584b846a311ee0032d405e425194ae2f920e
 }
