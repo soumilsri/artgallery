@@ -7,38 +7,38 @@ box sizing added to ensure padding and margin are included in total width and he
 
 #bod {
 	margin: 0px;
-	height: 2000px;
+	height: 658px;
 	width: 100%;
+	display: inline-block;
+#gallery{
+	display: inline;
+	float: left;
+	width: 300px;
 }
 
+#bod .sections{
+	display: inline-block;
+	position: relative;
+}
 .myVideo {
     position: absolute;
     right: 0;
-    bottom: 0;
-<<<<<<< HEAD
-    min-width: 100%;  
-    z-index: -2;
+    bottom: 0; 
     overflow: hidden;
-=======
-    min-width: 100%; 
-    
+    margin-left: 20px;
     z-index: -1;
->>>>>>> 5db5584b846a311ee0032d405e425194ae2f920e
+
 }
 
 .main {
 	position: absolute;
-  	width: 99%;
+  	width: 100%;
   	height: 100%;
   	opacity: 1;
   	border:1px solid black;
-<<<<<<< HEAD
-  	padding:10px 10px 10px 10px;
-  	display: inline-flex;
-=======
-  	
->>>>>>> 5db5584b846a311ee0032d405e425194ae2f920e
 
+  	padding:10px 10px 10px 0px;
+  	display: inline-flex;
 }
 
 .main > section{
@@ -55,7 +55,7 @@ box sizing added to ensure padding and margin are included in total width and he
   	
 }
 .container2 {
-	width:60%;
+	width:70%;
   	height: 100%;
   	text-align: center;
   	
@@ -91,13 +91,73 @@ box sizing added to ensure padding and margin are included in total width and he
 	padding-top: 300px;
 	padding-bottom: 100px;
 }
-<<<<<<< HEAD
+
 
 .logo1 {
 	padding-left: 100px;
 	padding-top: 200px;
-=======
+}
 #pics{
 	width:50%;
->>>>>>> 5db5584b846a311ee0032d405e425194ae2f920e
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+ 
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #D3D3D3 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #D3D3D3;
+}
+
+.sketch {
+	width: 400px;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #D3D3D3;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
