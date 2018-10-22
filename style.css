@@ -10,6 +10,7 @@ box sizing added to ensure padding and margin are included in total width and he
 	height: 658px;
 	width: 100%;
 	display: inline-block;
+}
 #gallery{
 	display: inline;
 	float: left;
