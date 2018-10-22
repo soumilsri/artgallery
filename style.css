@@ -46,8 +46,6 @@ box sizing added to ensure padding and margin are included in total width and he
 	float: left;
 }
 
-}
-
 
 .container1 {
 	width: 20%;
@@ -56,7 +54,7 @@ box sizing added to ensure padding and margin are included in total width and he
   	
 }
 .container2 {
-	width:70%;
+	width:60%;
   	height: 100%;
   	text-align: center;
   	
@@ -161,4 +159,33 @@ box sizing added to ensure padding and margin are included in total width and he
   width: 0;
   height: 0;
   border-style: solid;
+}
+
+.timeline ul li::after {
+  background: #fff;
+  transition: background .5s ease-in-out;
+}
+ 
+.timeline ul li.in-view::after {
+  background: #F45B69;
+}
+ 
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+ 
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px,0,0);
+}
+ 
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px,0,0);
+}
+ 
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
 }

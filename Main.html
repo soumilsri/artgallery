@@ -50,30 +50,30 @@
 			
 		<section class="timeline">
   			<ul>
-    		<li>
-      	<div>
-        	<time>23434</time>
-        	<img class="sketch" src="attachments/IMG_20180922_145040.jpg">
-      		</div>
-    		</li>
-    	<li>
-      	<div>
-        	<time>23434</time>
-        	<img class="sketch" src="sketches/IMG_20181005_180014.jpg">
-      		</div>
-    		</li>
-    	<li>
-      	<div>
-        	<time>Dragon</time>
-        	<img class="sketch" src="sketches/IMG_20181003_224046.jpg">
-      		</div>
-    		</li>
-    	<li>
-      	<div>
-        	<time>Venom</time>
-        	<img class="sketch" src="sketches/IMG_20181007_005723.jpg">
-      		</div>
-    		</li>
+	    		<li>
+		      		<div>
+			        	<time>23434</time>
+			        	<img class="sketch" src="attachments/IMG_20180922_145040.jpg">
+		      		</div>
+	    		</li>
+		    	<li>
+		      		<div>
+			        	<time>23434</time>
+			        	<img class="sketch" src="sketches/IMG_20181005_180014.jpg">
+		      		</div>
+		    		</li>
+		    	<li>
+		      		<div>
+			        	<time>Dragon</time>
+			        	<img class="sketch" src="sketches/IMG_20181003_224046.jpg">
+		      		</div>
+		    		</li>
+			    	<li>
+		      		<div>
+			        	<time>Venom</time>
+			        	<img class="sketch" src="sketches/IMG_20181007_005723.jpg">
+		      		</div>
+		    		</li>
   			</ul>
 		</section>
 		</div>
@@ -85,6 +85,33 @@
  		
  	</div>
  </footer>
+<script type="text/javascript">
+	
+	function isElementInViewport(el) {
+		  var rect = el.getBoundingClientRect();
+		  return (
+		    rect.top >= 0 &&
+		    rect.left >= 0 &&
+		    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		  );
+		}
 
+		var items = document.querySelectorAll(".timeline li");
+ 
+		// code for the isElementInViewport function
+		 
+		function callbackFunc() {
+		  for (var i = 0; i < items.length; i++) {
+		    if (isElementInViewport(items[i])) {
+		      items[i].classList.add("in-view");
+		    }
+		  }
+		}
+		 
+		window.addEventListener("load", callbackFunc);
+		window.addEventListener("scroll", callbackFunc);
+
+</script>
 </body>
 </html>
